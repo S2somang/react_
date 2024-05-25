@@ -1,8 +1,12 @@
 body {
     font: 14px "Century Gothic", Futura, sans-serif;
-    margin: 20px;
+    background-color: #1b3148;
+    color: #fff;
+    margin: 0;
+    padding: 0;
 }
 
 ol,ul {
-    padding-left: 30px;
+    padding: -30px;
+    margin:0;
 }

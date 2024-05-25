@@ -58,6 +58,8 @@ function App() {
       'Go to move #' + move :
       'Go to game start';
     return (
+      // jxs에서는 리스트처럼 여러개로 나열되는 경우 고유값key를 줘야함
+      // key를 이용해서 리액트는 어떤 부분이 변경되었는지 인식 할 수 있음.
       <li key={move}>
         <button className="move-button" onClick={() => jumpTo(move)}>{desc}</button>
       </li>
@@ -67,7 +69,7 @@ function App() {
   const jumpTo = (step) => {
     setStepNumber(step);
     setXIsNext((step % 2) === 0);
-  }
+  } 
 
   return (
     <div className="game">
